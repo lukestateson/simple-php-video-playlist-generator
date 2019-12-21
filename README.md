@@ -16,3 +16,7 @@ Single-file php script that will generate a playlist from your video collection.
 * Install VLC on your Android device
 * Open your desktop IP:PORT from Android device browser
 * Click on any directory, all video files are loaded into VLC
+
+**Support**
+
+Support me at Patreon https://www.patreon.com/lukestateson
