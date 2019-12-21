@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^pls/all$  /index.php?pls=all [L,NC,QSA]
+RewriteRule ^pls/random$  /index.php?pls=random [L,NC,QSA]
+RewriteRule ^pls/(.+)$  /index.php?pls=$1 [L,NC,QSA]
