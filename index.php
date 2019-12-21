@@ -4,15 +4,12 @@ header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 
-// Change this path to location of video files (or create symlink).
-$conf['dir'] = '/var/www/videos';
-// Change the title of collection
-$conf['title'] = 'Videos';
-
 $videos = array();
 
 $conf['debug'] = 0;
 $conf['xdg-start'] = 'vlc://';
+$conf['dir'] = DIRNAME(__FILE__);
+$conf['title'] = 'Videos';
 $conf['url'] = 'http://'.$_SERVER['HTTP_HOST'].'/';
 
 if($conf['debug'] == 1) {
